@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block header%}<h1>登場人物リスト</h1>{% endblock %}
+
+
+
+{% block content %}
+<a href="{% url 'sidebar' %}"><button type="submit" class="btn btn-primary">戻る</button></a>
+{% for post in object_list %}
+<ul class="container">
+    <div class="alert alert-primary" role="alert">
+        {{ post.name }}
+    </div>
+    <div class="alert alert-check it out!" role="alert">
+        特徴: {{ post.force }}
+    </div>
+    <a href="{% url 'detail' post.pk %}"><button type="submit" class="btn btn-primary">詳細</button></a>
+    <a href="{% url 'update' post.pk %}"><button type="submit" class="btn btn-primary">編集</button></a>
+    <a href="{% url 'delete' post.pk %}"><button type="submit" class="btn btn-primary">削除</button></a>
+</ul>
+{% endfor %}
+{% endblock %}
+
+
+
+

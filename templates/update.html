@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action = '' method = 'POST'>{% csrf_token %}
+  名前:{{ form.name }}
+  特徴:{{ form.force }}
+
+  <a href="{% url 'list' %}">戻る</a>
+  <button type="submit" class="btn btn-primary">登録</button>
+  <a href="{% url 'list' %}"
+</form>
+
+{% endblock%}

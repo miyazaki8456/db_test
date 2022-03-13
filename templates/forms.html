@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action = '' method = 'POST'>{% csrf_token %}
+  {{ form.as_p }}
+  <a href="{% url 'sidebar' %}">戻る</a>
+  <button type="submit" class="btn btn-primary">登録</button>
+  <a href="{% url 'list' %}"
+</form>
+
+{% endblock%}

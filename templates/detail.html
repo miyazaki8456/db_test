@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<a href="{% url 'list' %}"><button type="submit" class="btn btn-primary">戻る</button></a>
+
+<div class="alert alert-primary" role="alert">
+  {{ object.name }}
+</div>
+<div class="alert alert-check it out!" role="alert">
+  特徴: {{ object.force }}
+</div>
+{% endblock %}
