@@ -1,6 +1,0 @@
-#database設定
-DB_HOST = "ls-adfd4803ed7bbe1368caca5e96da51c70c6fc20e.cn0fp2vrv3xw.ap-northeast-1.rds.amazonaws.com"
-DB_NAME = "db_test"
-DB_USER = "dbmasteruser"
-DB_PASSWORD = "7F)hxn:B4!(npXZ`.l#q|y9<F)NC3[6+"
-DB_PORT = "3306"
