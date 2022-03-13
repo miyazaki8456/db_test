@@ -34,7 +34,7 @@ SECRET_KEY = 'django-insecure-(^8&fe6+v^gttx)$$l6ps8#0&t5cg4lys9_@gl=f*bl67wok@j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['35.72.48.138', '127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -142,9 +142,3 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-if not os.environ.get("DEBUG"):
-   STATIC_ROOT='/usr/share/nginx/html/static'
-   MEDIA_ROOT='/usr/share/nginx/html/media'
-else:
-   STATIC_ROOT = '/static'
-   MEDIA_ROOT = '/media'
